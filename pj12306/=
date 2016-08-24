@@ -1,0 +1,2 @@
+2016-07-20 09:40:28 [scrapy] INFO: Scrapy 1.1.0 started (bot: pj12306)
+2016-07-20 09:40:28 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'pj12306.spiders', 'SPIDER_MODULES': ['pj12306.spiders'], 'LOG_FILE': '=', 'DOWNLOAD_DELAY': 3, 'BOT_NAME': 'pj12306'}

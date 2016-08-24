@@ -1,0 +1,529 @@
+2016-07-20 09:56:49 [scrapy] INFO: Scrapy 1.1.0 started (bot: pj12306)
+2016-07-20 09:56:49 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'pj12306.spiders', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['pj12306.spiders'], 'BOT_NAME': 'pj12306', 'LOG_FILE': '20160720.log', 'DOWNLOAD_DELAY': 3}
+2016-07-20 09:56:50 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-07-20 09:56:50 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-07-20 09:56:50 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-07-20 09:56:50 [scrapy] INFO: Enabled item pipelines:
+['pj12306.pipelines.StationSQLPipeline']
+2016-07-20 09:56:50 [scrapy] INFO: Spider opened
+2016-07-20 09:56:50 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-07-20 09:56:54 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/xian/201001/t20100124_1175.html
+2016-07-20 09:56:54 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:56:58 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/xian/201001/t20100124_1176.html
+2016-07-20 09:56:58 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:05 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/wuhan/201001/t20100124_1174.html
+2016-07-20 09:57:05 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:08 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/zhengzhou/201001/t20100124_1171.html
+2016-07-20 09:57:08 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:12 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/zhengzhou/201001/t20100124_1172.html
+2016-07-20 09:57:12 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:17 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/heht/201001/t20100124_1169.html
+2016-07-20 09:57:17 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:20 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/heht/201001/t20100124_1170.html
+2016-07-20 09:57:20 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:24 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/taiyuan/201001/t20100124_1167.html
+2016-07-20 09:57:24 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:27 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/taiyuan/201001/t20100124_1168.html
+2016-07-20 09:57:27 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:30 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/beijing/201001/t20100124_1165.html
+2016-07-20 09:57:30 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:32 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2016-07-20 09:57:32 [scrapy] INFO: Closing spider (shutdown)
+2016-07-20 09:57:33 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2016-07-20 09:57:37 [scrapy] INFO: Scrapy 1.1.0 started (bot: pj12306)
+2016-07-20 09:57:37 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'pj12306.spiders', 'LOG_LEVEL': 'INFO', 'SPIDER_MODULES': ['pj12306.spiders'], 'BOT_NAME': 'pj12306', 'LOG_FILE': '20160720.log', 'DOWNLOAD_DELAY': 3}
+2016-07-20 09:57:37 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-07-20 09:57:37 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-07-20 09:57:37 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-07-20 09:57:37 [scrapy] INFO: Enabled item pipelines:
+['pj12306.pipelines.StationSQLPipeline']
+2016-07-20 09:57:37 [scrapy] INFO: Spider opened
+2016-07-20 09:57:37 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-07-20 09:57:41 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/wlmq/201001/t20100124_1193.html
+2016-07-20 09:57:41 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:46 [scrapy] ERROR: Spider error processing <GET http://www.12306.cn/mormhweb/kyyyz/wlmq/201001/t20100124_1194.html> (referer: http://www.12306.cn/mormhweb/kyyyz/)
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "c:\python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\spiders\stations.py", line 49, in parse_station
+    item["luggage"] = infos[3].strip() != u""
+IndexError: list index out of range
+2016-07-20 09:57:50 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/lanzhou/201001/t20100124_1191.html
+2016-07-20 09:57:50 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:53 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/lanzhou/201001/t20100124_1192.html
+2016-07-20 09:57:53 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:57:57 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/kunming/201001/t20100124_1189.html
+2016-07-20 09:57:57 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:00 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/kunming/201001/t20100124_1190.html
+2016-07-20 09:58:00 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:02 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/chengdu/201001/t20100124_1187.html
+2016-07-20 09:58:02 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:05 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/chengdu/201001/t20100124_1188.html
+2016-07-20 09:58:05 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:09 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/nanning/201001/t20100124_1185.html
+2016-07-20 09:58:09 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:11 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/nanning/201001/t20100124_1186.html
+2016-07-20 09:58:11 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:14 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/guangtie/201001/t20100124_1183.html
+2016-07-20 09:58:14 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:16 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/guangtie/201001/t20100124_1184.html
+2016-07-20 09:58:16 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:20 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/nanchang/201001/t20100124_1181.html
+2016-07-20 09:58:20 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:24 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/nanchang/201001/t20100124_1182.html
+2016-07-20 09:58:24 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:32 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/shanghai/201001/t20100124_1180.html
+2016-07-20 09:58:32 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:36 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/qinzang/201001/t20100124_1195.html
+2016-07-20 09:58:36 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:37 [scrapy] INFO: Crawled 18 pages (at 18 pages/min), scraped 1262 items (at 1262 items/min)
+2016-07-20 09:58:40 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/qinzang/201001/t20100124_1196.html
+2016-07-20 09:58:40 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:44 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/jinan/201001/t20100124_1177.html
+2016-07-20 09:58:44 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:50 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/jinan/201001/t20100124_1178.html
+2016-07-20 09:58:50 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:53 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/xian/201001/t20100124_1175.html
+2016-07-20 09:58:53 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:58:56 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/xian/201001/t20100124_1176.html
+2016-07-20 09:58:56 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:04 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/wuhan/201001/t20100124_1174.html
+2016-07-20 09:59:04 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:09 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/zhengzhou/201001/t20100124_1171.html
+2016-07-20 09:59:09 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:13 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/zhengzhou/201001/t20100124_1172.html
+2016-07-20 09:59:13 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:17 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/heht/201001/t20100124_1169.html
+2016-07-20 09:59:17 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:21 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/heht/201001/t20100124_1170.html
+2016-07-20 09:59:21 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:25 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/taiyuan/201001/t20100124_1167.html
+2016-07-20 09:59:25 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:29 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/taiyuan/201001/t20100124_1168.html
+2016-07-20 09:59:29 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:34 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/beijing/201001/t20100124_1165.html
+2016-07-20 09:59:34 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:37 [scrapy] INFO: Crawled 32 pages (at 14 pages/min), scraped 2126 items (at 864 items/min)
+2016-07-20 09:59:38 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/beijing/201001/t20100124_1166.html
+2016-07-20 09:59:38 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:41 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/shenyang/201001/t20100124_1163.html
+2016-07-20 09:59:41 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:44 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/shenyang/201001/t20100124_1164.html
+2016-07-20 09:59:44 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:48 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/ky_heb/201001/t20100124_1162.html
+2016-07-20 09:59:48 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:53 [scrapy] INFO: crawl http://www.12306.cn/mormhweb/kyyyz/ky_heb/201001/t20100124_1161.html
+2016-07-20 09:59:53 [scrapy] ERROR: Error processing {}
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Documents\Coding_Ex\12306\pj12306\pj12306\pipelines.py", line 78, in process_item
+    self.cursor.execute(self.sql, (item["bureau"], item["station"],
+  File "c:\python27\lib\site-packages\scrapy\item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'bureau'
+2016-07-20 09:59:53 [scrapy] INFO: Closing spider (finished)
+2016-07-20 09:59:53 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 11189,
+ 'downloader/request_count': 37,
+ 'downloader/request_method_count/GET': 37,
+ 'downloader/response_bytes': 854426,
+ 'downloader/response_count': 37,
+ 'downloader/response_status_count/200': 37,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 7, 20, 1, 59, 53, 66000),
+ 'item_scraped_count': 3372,
+ 'log_count/ERROR': 34,
+ 'log_count/INFO': 42,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 37,
+ 'scheduler/dequeued': 37,
+ 'scheduler/dequeued/memory': 37,
+ 'scheduler/enqueued': 37,
+ 'scheduler/enqueued/memory': 37,
+ 'spider_exceptions/IndexError': 1,
+ 'start_time': datetime.datetime(2016, 7, 20, 1, 57, 37, 291000)}
+2016-07-20 09:59:53 [scrapy] INFO: Spider closed (finished)
